@@ -1,0 +1,21 @@
+.jumbotron{
+    background-image: url(pics/adfe565bb7839b83ea8812e860d73c79.png);
+    background-size: cover;
+    height: 50vh;
+}
+
+.card{
+    width: 18rem;
+}
+
+body{
+    background-image: url(pics/SnKP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.jumbotron h1{
+    background:rgb(79, 29, 121, 0.5);
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html"><img src="pics/crests_22.png" class="rounded-circle bg-light" alt="Nav Icon"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart (3)</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Checkout<span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+        <div class="container border border-white bg-dark text-white">
+            <div class="row border border-left-0 border-right-0 border-white">
+              <div class="col-lg-8 border border-left-0 border-top-0 border-bottom-0 text-right">
+                <form method="GET">
+                    <div class="form-row">
+                      <div class="form-group col-lg">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-lg-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" name="city" required>
+                      </div>
+                      <div class="form-group col-lg-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control" name="state" required>
+                            <option selected disabled value="">Choose...</option>
+                          <option>NY</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-lg-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" name="zip" maxlength="5" required>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row border border-left-0 border-bottom-0 border-right-0">
+                        <div class="form-group col-lg-6">
+                          <label for="cName">Card Holder Name</label>
+                          <input type="text" class="form-control" id="cName" name="cName" required>
+                        </div>
+                        <div class="form-group col-lg-6">
+                          <label for="cNum">Card Number</label>
+                          <input type="text" class="form-control" id="cNum" name="cNum" maxlength="16" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="form-group col-lg-3">
+                            <label for="month">Experation Date (Month)</label>
+                            <select id="month" class="form-control" name="month" required>
+                            <option selected disabled value="">Choose...</option>
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-lg-3">
+                            <label for="year">(Year)</label>
+                            <select id="year" class="form-control" name="year" required>
+                                <option selected disabled value="">Choose...</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                            </select>
+                          </div>
+                        <div class="form-group col-lg-3">
+                            <label for="CVV">CVV</label>
+                            <input type="text" class="form-control" id="CVV" name="CVV" maxlength="3" required>
+                        </div>
+                        <div class="form-group col-lg-3">
+                          <label for="inputZip2">Zip</label>
+                          <input type="text" class="form-control" id="inputZip2" name="zip2" maxlength="5" required>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Continue</button>
+                  </form>
+              </div>
+              <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col-sm-6 text-left border border-left-0 border-top-0 border-right-0">
+                        <p class="py-1">Items</p>
+                        <p class="py-1">Shipping</p>
+                        <p class="py-1">Tax</p>
+                        <p class="pt-5 pb-2 h4">Total</p>
+                    </div>
+                    <div class="col-sm-6 text-right border border-left-0 border-top-0 border-right-0">
+                        <p class="py-1">$124.97</p>
+                        <p class="py-1">$37.49</p>
+                        <p class="py-1">$12.49</p>
+                        <p class="pt-5 pb-2 h4">$174.95</p>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 text-left border border-left-0 border-top-0 border-right-0 py-3">
+                            <img src="pics/71n9wAxG9AL._SL1010_.jpg" class="card-img-top" alt="Mass Effect Legendary Edition Box Art">
+                        </div>
+                        <div class="col-sm-6 text-right border border-left-0 border-top-0 border-right-0 py-3">
+                            <p class="h5">Mass Effect Legendary Edition</p>
+                            <p class="h3 text-right">$59.99</p>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 text-left border border-left-0 border-top-0 border-right-0 py-3">
+                                <img src="pics/Three_Houses_cover_art.png" class="card-img-top" alt="Fire Emblem Three Houses Box Art">
+                            </div>
+                            <div class="col-sm-6 text-right border border-left-0 border-top-0 border-right-0 py-3">
+                                <p class="h5">Fire Emblem: Three Houses</p>
+                                <p class="h3 text-right">$49.99</p>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 text-left border border-left-0 border-top-0 border-right-0 py-3">
+                                    <img src="http://vignette2.wikia.nocookie.net/megamitensei/images/f/f7/P3Art.jpg/revision/latest?cb=20140904023451" class="card-img-top" alt="Persona 3 FES Box Art">
+                                </div>
+                                <div class="col-sm-6 text-right border border-left-0 border-top-0 border-right-0 py-3">
+                                    <p class="h5">Persona 3 FES</p>
+                                    <p class="h3 text-right">$14.99</p>
+                                </div>
+                                </div>
+                
+              </div>
+            </div>
+           
+          </div>
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
